@@ -18,7 +18,7 @@ export default function Results({ input }) {
           <th>Invested Capital</th>
         </tr>
       </thead>
-      <tbody>
+      <body>
         {resultsData.map((yearData) => {
           const totalInterest =
             yearData.valueEndOfYear - yearData.annualInvestment * yearData.year;
@@ -33,7 +33,7 @@ export default function Results({ input }) {
             </tr>
           );
         })}
-      </tbody>
+      </body>
     </table>
   );
 }
